@@ -21,6 +21,7 @@ body {
     color: black;
     background-color: var(--bkgdcolor);
     background-repeat: none;
+    padding: 2rem 2rem;
 }
 
 p { 
@@ -74,12 +75,15 @@ h3 {
     text-decoration: none;
 }
 
-ul li{
-    display: inline-flex;
+nav {
+    display: flex;
+    background-color: var(--bkgdcolor);
+}
+
+nav a{
     padding: 1vw 5vw 1vw 5vw;
     text-decoration: none;
     text-align: center;
-    justify-content: flex-end;
 }
 
 .row {
