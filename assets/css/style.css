@@ -22,6 +22,8 @@ body {
     background-color: var(--bkgdcolor);
     background-repeat: none;
     padding: 2rem 2rem;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 p { 
@@ -48,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: .625rem;
     color: var(--logocenter);
     line-height: 1.1;
+    display: flex;
 }
 
 h1 {
@@ -92,11 +95,16 @@ nav a{
     flex-wrap: wrap;
 }
 
+.devport {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .imgbox {
     display: flex;
-    border-color: #402312;
+    flex-wrap: wrap;
     border-radius: 8px;
-    border-style: double;
     padding: 1vw 5vw 1vw 5vw;
     margin-top: 2rem;
     border-radius: 8px;
@@ -105,7 +113,6 @@ nav a{
 
 .imagebox-design {
     border-radius: 8px;
-    border-color: #51082f;
     border-width: medium;
 }
 
@@ -116,12 +123,18 @@ nav a{
 
 }
 
+.selfie {
+    border-radius: 50% 50%;
+    max-width: 150px;
+    align-content: center;
+    box-shadow: inset 0px 3px 8px rgba(158, 20, 96, 1), 0 0 15px rgba(64, 35, 18, 1);
+}
+
 footer {
     text-align: center;
 }
 
 /* flex needs @media */
-
 /* Desktop and tablet */
 @media screen and (min-width: 768px) {
     header {
