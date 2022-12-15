@@ -4,14 +4,12 @@
     --logochoc: #402312;
     --logorasp: #9e1460;
     --darkberry: #51082f;
-    flex: 2 1 auto;
     font-size: 10px;
 }
 
 .logo {
     max-width: 96%;
     border-radius: 15px 15px;
-    margin: 20px;
 }
 
 body {
@@ -47,10 +45,10 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    display: flex;
     margin-bottom: .625rem;
     color: var(--logocenter);
     line-height: 1.1;
-    display: flex;
 }
 
 h1 {
@@ -58,6 +56,7 @@ h1 {
     font-weight: bolder;
     line-height: 1.5;
     font-size: 2.5rem;
+    justify-items: center;
     text-align: center;
 }
 
@@ -126,12 +125,12 @@ nav a{
 .selfie {
     border-radius: 50% 50%;
     max-width: 150px;
-    align-content: center;
     box-shadow: inset 0px 3px 8px rgba(158, 20, 96, 1), 0 0 15px rgba(64, 35, 18, 1);
 }
 
 footer {
     text-align: center;
+    display: inline;
 }
 
 /* flex needs @media */
