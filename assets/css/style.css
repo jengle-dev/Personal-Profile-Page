@@ -31,6 +31,18 @@ p {
     padding-bottom: 1.25rem;
 }
 
+a:link {
+    color:#412354;
+}
+
+a:visited {
+    color: #9e1460;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: .625rem;
     color: var(--logocenter);
@@ -38,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    color: var(--logocenter);
+    color: black;
     font-weight: bolder;
     line-height: 1.5;
     font-size: 2.5rem;
@@ -49,7 +61,7 @@ h2 {
     color:var(--darkberry);
     font-weight: bold;
     line-height: 1.25;
-    font-size: 2rem;
+    font-size: 2.25rem;
     text-decoration: none;
 }
 
@@ -58,25 +70,64 @@ h3 {
     color:var(--darkberry);
     font-weight: bold;
     line-height: 1.25;
-    font-size: 1.75;
+    font-size: 2rem;
     text-decoration: none;
 }
 
 ul li{
     display: inline-flex;
-    padding: 7%;
+    padding: 1vw 5vw 1vw 5vw;
     text-decoration: none;
     text-align: center;
     justify-content: flex-end;
 }
 
-.imgbox li{
-    display: inline;
-    padding: 2.5rem;
-    margin-top: 2rem;
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.imgbox li:hover{
+.imgbox {
+    display: flex;
+    border-color: #402312;
+    border-radius: 8px;
+    border-style: double;
+    padding: 1vw 5vw 1vw 5vw;
+    margin-top: 2rem;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.imagebox-design {
+    border-radius: 8px;
+    border-color: #51082f;
+    border-width: medium;
+}
+
+.imgbox:hover .imagebox-design{
     flex: 0 2 1;
     cursor:pointer;
+    box-shadow: inset 0px 3px 8px rgba(158, 20, 96, 1), 0 0 15px rgba(64, 35, 18, 1);
+
+}
+
+footer {
+    text-align: center;
+}
+
+/* flex needs @media */
+
+/* Desktop and tablet */
+@media screen and (min-width: 768px) {
+    header {
+        padding: 4% 8%;    
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px){
+    .row {
+        padding: 11% 8%;
+    }
 }
