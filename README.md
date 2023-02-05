@@ -10,14 +10,19 @@ N/A
 The site is developed for responsive design so that it can be viewed on any screen size, even mobile.
 
 Example Desktop
+
 ![image](https://user-images.githubusercontent.com/117794203/216795886-ae2931b9-1980-4860-975f-3aa4a23a8a28.png)
 
 Example Tablet
+
 ![image](https://user-images.githubusercontent.com/117794203/216795950-6ab70485-7d7e-4bfd-a384-e0808355d57a.png)
+
 The Navbar does go away at template size.
 
 Example Mobile
+
 ![image](https://user-images.githubusercontent.com/117794203/216795990-35825e7e-5001-41a8-a058-6a4261166fdc.png)
+
 
 On hover of the project cards, the cards will enlarge. The card title will become fully opaque. Clicking the Visit Site will route you to the direct link to the project in github. Placeholders will be filled as additional projects are completed to my satisfaction.
 
