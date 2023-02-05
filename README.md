@@ -1,4 +1,4 @@
-# Jennifer Engle Module 2 - Challenge
+# Jennifer Engle Dev Personal Profile Page
 
 ## Description
 The goal of this project is to create a professional profile for a software engineer.
@@ -10,14 +10,21 @@ N/A
 The site is developed for responsive design so that it can be viewed on any screen size, even mobile.
 
 Example Desktop
-![ExpectedProfilePage](https://user-images.githubusercontent.com/117794203/208003059-6b12f58c-f8d6-420b-8491-454d39cab1d8.png)
+
+![image](https://user-images.githubusercontent.com/117794203/216795886-ae2931b9-1980-4860-975f-3aa4a23a8a28.png)
 
 Example Tablet
-![ExpectedProfilePage-TabletExample](https://user-images.githubusercontent.com/117794203/208003838-0690b13f-5bbb-4255-aac4-e276ef83ad4f.png)
+
+![image](https://user-images.githubusercontent.com/117794203/216795950-6ab70485-7d7e-4bfd-a384-e0808355d57a.png)
+
+The Navbar does go away at template size.
 
 Example Mobile
-![ExpectedProfilePage-MobileExample](https://user-images.githubusercontent.com/117794203/208004449-4d42797a-45e1-4d62-a39b-20628c6c5b08.png)
 
+![image](https://user-images.githubusercontent.com/117794203/216795990-35825e7e-5001-41a8-a058-6a4261166fdc.png)
+
+
+On hover of the project cards, the cards will enlarge. The card title will become fully opaque. Clicking the Visit Site will route you to the direct link to the project in github. Placeholders will be filled as additional projects are completed to my satisfaction.
 
 ## Support
 If there are issues with the site, please reach out to me, Jennifer Engle, at j.engle.dev@gmail.com and reference the site's URL. Please provide any screenshots and behavior along with your browser information.
@@ -35,4 +42,4 @@ Jennifer Engle
 No License is used on this site.
 
 ## Project status
-Completed for initial review for grading.
+Resubmitted for additional grading. Continually in progress due to new project work being added.
