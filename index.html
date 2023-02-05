@@ -1,109 +1,255 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets\css\reset.css" />
-    <link rel="stylesheet" href="assets\css\style.css" />
-    <title>Jennifer Engle Portfolio</title>
+    <title>Jennifer Engle</title>
+
+    <!-- links -->
+    <!-- Compiled and minified CSS - Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,800;1,300;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- any icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <img src="assets\images\header2.png" alt="banner with 2 interlaced circles and Jennifer Engle" class="logo">
-        <h1>Aspiring Software Engineer | Graphic Designer & Creative</h1>
-        <nav>
-            <h2><a href="#History">History</a></h2>
-            <h2><a href="#The Artist">The Artist</a></h2>
-            <h2><a href="#Dev Portfolio">Dev Portfolio</a></h2>
-            <h2><a href="#Contact Info">Contact Info</a></h2>
-        </nav>
-    </header>
-    <main class="column justify-left">
-        <history>
-            <h3 id="History">A Brief History</h3>
-            <p>I studied Graphic Design at Drake University and received my BFA in 2007. I started right away as a
-                Pre-press Designer for a small printing company in Des Moines, IA.</p>
-            <p>After my 2nd design job, I had learned that fixing other people's digital art and documents wasn't
-                helping me grow. I also learned that "art-on-demand" wasn't something I was able to keep up with and
-                enjoy. 2 years into the journey, I move from Iowa back home to Kansas.</p>
-            <p>An indirect path from a Graphic Design degree to selling insurance and then participating in a
-                hack-a-thon at a previous employer's event, I caught the coding "bug". I've worked as an IT business
-                partner for many years, a subject matter expert (SME) for many projects including robotic process
-                engineering (RPA), I finally decided being a partner and SME on the business side isn't enough.
-                <strong>I want to be solving the problems and helping business teams come up with the solutions they
-                    haven't considered yet.</strong></p>
-        </history>
-        <!-- I'd like to find latest resume and a way to download/upload or change text to contact me for latest CV or visit linkedin profile -->
-        <!-- <p>Download my latest CV here.</p> -->
-        <br>
-        <devport>
-            <h3>Dev Portfolio</h3>
-            <p>Here are a couple examples of my dev work. I'm excited to learn and share more. Each of these were an
-                exercise or project worked on during my KU Software Engineer Bootcamp. Clicking on the below image will
-                open the corresponding webpage in a new tab of your browser.</p>
-            <section class="devport">
-                <!-- <imageboxes class="imgbox">
-                    <a href="https://jengle-dev.github.io/module-1-challenge/" target="_blank">
-                        <img src="assets/images/codeofHoriseon.png" width="200px" height="200px"
-                            class="imagebox-design"></a>
-                </imageboxes> -->
-                <imageboxes class="imgbox">
-                    <a href="https://jengle-dev.github.io/module-2-mini-project-redo/" target="_blank">
-                        <img src="assets/images/flexboxcolumn.png" width="200px" height="200px"
-                            class="imagebox-design"></a>
-                </imageboxes>
-                <imageboxes class="imgbox">
-                    <a href="https://jengle-dev.github.io/Demo-Personal-Profile-HTML-CSS/" target="_blank">
-                        <img src="assets/images/demosite.png" width="200px" height="200px" class="imagebox-design"></a>
-                </imageboxes>
-                <imageboxes class="imgbox">
-                    <a href="https://juliaguas17.github.io/hardcore-memory-game/" target="_blank">
-                        <img src="assets/images/Hardcore-Memory-Game.png" width="200px" height="200px"
-                            class="imagebox-design"></a>
-                </imageboxes>
-            </section>
-        </devport>
-        <br>
-        <artist>
-            <h3 id="The Artist">The Artist</h3>
-            <p>I do not own a flat surface that is not covered in paper or art projects, other than the little space in
-                front of my keyboard and to the right for my mouse. I have been a crafter, creator, creative my entire
-                life. I will create an art portfolio page soon.
-            </p>
-        </artist>
-        <br>
-        <contact>
-            <h3 id="Contact Info">Contact & Social Media Links</h3>
-            <p>
+    <!-- navbar -->
+    <nav id="nav">
+        <div class="nav-wrapper">
+            <h2 class="mainHeader">Jennifer Engle Dev Portfolio</h2>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="nav-content"><a href="#Dev Portfolio">
+                        <h5 class="nav">Dev Portfolio</h5>
+                    </a></li>
+                <li class="nav-content"><a href="#History">
+                        <h5 class="nav">History</h5>
+                    </a></li>
+                <li class="nav-content"><a href="#Contact Info">
+                        <h5 class="nav">Contact Info</h5>
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Developer Portfolio -->
+    <div class="p-container">
+        <h4 id="Dev Portfolio">Dev Portfolio</h4>
+        <p>Here are a couple examples of my dev work. I'm excited to learn and share more. Each of these were an
+            exercise or project worked on during my KU Software Engineer Bootcamp. Clicking on the below image will
+            open the corresponding webpage in a new tab of your browser.
+        </p>
+    </div>
+
+    <!-- Project Cards -->
+    <div class="row" max-width="948px">
+        <div class="col-3 s2 m4 container">
+            <!-- Card 1 -->
+            <!-- z-depth-3 is box shadow built into materialize -->
+            <div class="card small card-small z-depth-3">
+                <div class="card-image">
+                    <img class="card-image" src="assets/images/demosite.png" alt="snip of geometric pattern">
+                    <h4><span class="card-title">Demo Site</span></h4>
+                </div>
+                <div class="card-content">
+                    <p>Vanilla HTML & CSS Project</p>
+                </div>
+                <div class="card-action">
+                    <a href="https://jengle-dev.github.io/Demo-Personal-Profile-HTML-CSS/" target=”_blank”>Visit
+                        Page</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card small card-small z-depth-3">
+                <div class="card-image">
+                    <img class="card-image" src="assets/images/flexboxcolumn.png" alt="snip of purple glow text">
+                    <h4><span class="card-title">Flexbox Project</span></h4>
+                </div>
+                <div class="card-content">
+                    <p>Vanilla HTML & CSS</p>
+                </div>
+                <div class="card-action">
+                    <a href="https://jengle-dev.github.io/module-2-mini-project-redo/" target=”_blank”>Visit Page</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card small card-small z-depth-3">
+                <div class="card-image">
+                    <img class="card-image" src="assets/images/Hardcore-Memory-Game.png" alt="snip of card game site">
+                    <h4><span class="card-title">Matching Game Project</span></h4>
+                </div>
+                <div class="card-content">
+                    <p>HTML, Primer CSS, API Calls, Javascript</p>
+                </div>
+                <div class="card-action">
+                    <a href="https://juliaguas17.github.io/hardcore-memory-game/" target=”_blank”>Visit Page</a>
+                </div>
+            </div>
+
+            <!-- placeholder cards -->
+            <!-- Card 4 -->
+            <div class="card small card-small z-depth-3">
+                <div class="card-image">
+                    <img class="card-image placeholder" src="assets/images/Logo_Jennifer_Engle_image_only.png" alt="placeholder">
+                    <h4><span class="card-title">Project Placeholder</span></h4>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="card-action">
+                    <a href="#" target=”_blank”>Visit Page</a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card small card-small z-depth-3">
+                <div class="card-image">
+                    <img class="card-image placeholder" src="assets/images/Logo_Jennifer_Engle_image_only.png" alt="placeholder">
+                    <h4><span class="card-title">Project Placeholder</span></h4>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="card-action">
+                    <a href="#" target=”_blank”>Visit Page</a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card small card-small z-depth-3">
+                <div class="card-image">
+                    <img class="card-image placeholder" src="assets/images/Logo_Jennifer_Engle_image_only.png" alt="placeholder">
+                    <h4><span class="card-title">Project Placeholder</span></h4>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="card-action">
+                    <a href="#" target=”_blank”>Visit Page</a>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card small card-small z-depth-3">
+                <div class="card-image">
+                    <img class="card-image placeholder" src="assets/images/Logo_Jennifer_Engle_image_only.png" alt="placeholder">
+                    <h4><span class="card-title">Project Placeholder</span></h4>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="card-action">
+                    <a href="#" target=”_blank”>Visit Page</a>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="card small card-small z-depth-3">
+                <div class="card-image">
+                    <img class="card-image placeholder" src="assets/images/Logo_Jennifer_Engle_image_only.png" alt="placeholder">
+                    <h4><span class="card-title">Project Placeholder</span></h4>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="card-action">
+                    <a href="#" target=”_blank”>Visit Page</a>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="card small card-small z-depth-3">
+                <div class="card-image">
+                    <img class="card-image placeholder" src="assets/images/Logo_Jennifer_Engle_image_only.png" alt="placeholder">
+                    <h4><span class="card-title">Project Placeholder</span></h4>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="card-action">
+                    <a href="#" target=”_blank”>Visit Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Personal History -->
+    <div class="p-container">
+        <h4 id="History">A Brief History</h4>
+        <p>I studied Graphic Design at Drake University and received my BFA in 2007. I started right away as a
+            Pre-press Designer for a small printing company in Des Moines, IA. After my 2nd design job, I had learned
+            that fixing other people's digital art and documents wasn't helping me grow. I also learned that
+            "art-on-demand" wasn't something I was able to keep up with and enjoy. 2 years into the journey, I move
+            from Iowa back home to Kansas. An indirect path from a Graphic Design degree to selling insurance and
+            then participating in a hack-a-thon at a previous employer's event, I caught the coding "bug". I've
+            worked as an IT business partner for many years, a subject matter expert (SME) for many projects
+            including robotic process automation (RPA). I've finally decided being a partner and SME on the business
+            side isn't enough. <strong>I want to be solving the problems and helping business teams come up with the
+                solutions they haven't considered yet.</strong>
+        </p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="p-container">
+        <h4 id="Contact Info">Contact & Social Media Links</h4>
+        <div>
             <ul class="textbox">
-                <li><strong>Email:</strong>
-                    <a href="mailto:j.engle.dev@gmail.com"> j.engle.dev@gmail.com</a>
+                <li class="colorNickel"><strong>Email:</strong>
+                    <a href="mailto:j.engle.dev@gmail.com" class="hyperlink"> j.engle.dev@gmail.com</a>
                 </li>
-                <li><strong>Github:</strong>
-                    <a href="https://github.com/jengle-dev" target="_blank" rel="noopener noreferrer"> jengle-dev</a>
+                <li class="colorNickel"><strong>Github:</strong>
+                    <a href="https://github.com/jengle-dev" target="_blank" rel="noopener noreferrer" class="hyperlink">
+                        jengle-dev</a>
                 </li>
-                <li><strong>LinkedIn:</strong>
-                    <a href="https://linkedin.com/in/jennifer-engle" target="_blank" rel="noopener noreferrer">
+                <li class="colorNickel"><strong>LinkedIn:</strong>
+                    <a href="https://linkedin.com/in/jennifer-engle" target="_blank" rel="noopener noreferrer"
+                        class="hyperlink">
                         jennifer-engle</a>
                 </li>
-                <li><strong>Instagram:</strong>
-                    <a href="https://instagram.com/jengle2984/" target="_blank"> Personal Account</a>
+                <li class="colorNickel"><strong>Instagram:</strong>
+                    <a href="https://instagram.com/jengle2984/" target="_blank" class="hyperlink"> Personal Account</a>
                 </li>
-                <li><strong>Instagram:</strong>
-                    <a href="https://instagram.com/creativehullaballoo/" target="_blank"> Creative Hullaballoo</a>
+                <li class="colorNickel"><strong>Instagram:</strong>
+                    <a href="https://instagram.com/creativehullaballoo/" target="_blank" class="hyperlink"> Creative
+                        Hullaballoo</a>
                 </li>
             </ul>
-            </p>
-            </p>
-        </contact>
-    </main>
+        </div>
+    </div>
+
+    <!-- Icon -->
+    <!-- Floating Action Button -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large" href="#nav">
+            <i class="material-symbols-outlined">rocket</i>
+        </a>
+    </div>
+
+    <!-- Footer  -->
+    <footer <div class="footer">
+        <img class="portfolioPic selfie" src="assets/images/Oct22Selfie.png" alt="woman smiling with short hair">
+        <p class="footer-text">Thank you for visiting my portfolio page!</p>
+        <p class="footer-text"><span>&copy</span> 2022-2023 by Jennifer Engle</p>
+        </div>
+    </footer>
+
+    <!--script tags  -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/script.js"></script>
 </body>
-<footer>
-    <img src="assets\images\Oct22Selfie.png" alt="woman smiling with short hair" class="selfie">
-    <h4><span>&copy</span>2022-2023 by Jennifer Engle</h4>
-</footer>
 
 </html>
