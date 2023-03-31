@@ -9,6 +9,8 @@ N/A
 ## Visuals
 The site is developed for responsive design so that it can be viewed on any screen size, even mobile.
 
+Deployed site is visible on: https://jengle-dev.github.io/Personal-Profile-Page/ 
+
 Example Desktop
 
 ![image](https://user-images.githubusercontent.com/117794203/216795886-ae2931b9-1980-4860-975f-3aa4a23a8a28.png)
