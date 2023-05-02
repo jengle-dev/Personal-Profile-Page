@@ -1,10 +1,7 @@
 # Jennifer Engle Dev Personal Profile Page
 
 ## Description
-The goal of this project is to create a professional profile for a software engineer.
-
-## Badges
-N/A
+The goal of this project is to create a professional profile for a software engineer using Vanilla HTML & Javascript.
 
 ## Visuals
 The site is developed for responsive design so that it can be viewed on any screen size, even mobile.
